@@ -1,4 +1,4 @@
-package com.eseo_api_rest;
+package com;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,6 +10,14 @@ import com.controller.TestController;
 @ComponentScan(basePackageClasses=TestController.class)
 public class App 
 {
+	
+	//Si impossible de charger la classe : 
+	// Maven/UpdateProject puis Project/clean
+	//Run as configurations 
+
+	//http://localhost:8181/test?value=6296
+	//Port de Jenkins c'est 8181
+	//Par VirtualBox c'est 1080
     public static void main( String[] args )
     {
         try {

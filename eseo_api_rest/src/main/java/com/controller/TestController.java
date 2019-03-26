@@ -12,9 +12,10 @@ public class TestController {
 		@RequestMapping(value="/test", method=RequestMethod.GET)
 		@ResponseBody
 		public String get(@RequestParam(required = false, value="value") String value) {
-			System.out.println("Appel GET");
+			System.out.println("Appel GET ");
 			System.out.println("value : "+ value);
-			return value;
+			return "La valeur entrée est : " + value;
+			
 		}
 
 }
